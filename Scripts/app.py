@@ -3,10 +3,10 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load saved model and vectorizer
-with open('data/vectorizer.pkl', 'rb') as f:
+with open('Data/vectorizer.pkl', 'rb') as f:
     vectorizer = pickle.load(f)
 
-with open('data/spam_classifier.pkl', 'rb') as f:
+with open('Data/spam_classifier.pkl', 'rb') as f:
     model = pickle.load(f)
 
 st.title("📧 Email Phishing (Spam) Detector")
